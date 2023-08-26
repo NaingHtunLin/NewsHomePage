@@ -1,0 +1,141 @@
+.navbar-nav li {
+     margin-left: 12px;
+     position: relative;
+     border-radius: 20px;
+     width: 100px;
+
+     user-select: none;
+     padding: 5px 0;
+}
+.navbar-nav li:hover {
+     background-color: rgb(29, 29, 29);
+     color: aliceblue;
+     transition: 0.7s;
+}
+.navbar-nav li a {
+     position: absolute;
+     top: 20px;
+     text-align: center;
+}
+ul {
+     display: flex;
+     column-gap: 11px;
+
+     text-align: center;
+}
+.rgb {
+     width: inherit;
+     height: 300px;
+}
+
+.fontsize {
+     font-size: 50px;
+     font-weight: 800;
+     text-align: left;
+     line-height: 1;
+}
+
+.btn {
+     background-color: rgb(227, 48, 48);
+     color: white;
+     border-radius: 5px;
+     width: 150px;
+}
+
+.btn:hover {
+     background-color: #fff;
+     color: rgb(227, 48, 48);
+     border: solid 1px;
+     border-color: rgb(227, 48, 48);
+     border-radius: 5px;
+     width: 150px;
+}
+
+.textcolor {
+     color: white;
+}
+
+.retrodiv {
+     display: flex;
+     gap: 17px;
+}
+.retropc {
+     padding-top: 40px;
+}
+.retropc img {
+     width: 80px;
+     height: 115px;
+}
+.retro {
+     padding-top: 35px;
+}
+
+h3 {
+     font-weight: bold;
+     color: #6c757d;
+}
+h6 {
+     font-weight: bold;
+     font-size: 16px;
+}
+
+.humburger {
+     display: none;
+}
+.line1,
+.line2,
+.line3 {
+     width: 25px;
+     height: 5px;
+     margin: 5px;
+     background-color: hsl(236, 13%, 42%);
+     transition: 0.2s;
+}
+
+.line1Toggle {
+     transform: rotate(45deg) translate(10px, 4px);
+     transition: 0.2s;
+}
+
+.line2Toggle {
+     opacity: 0;
+     transition: 0.2s;
+}
+
+.line3Toggle {
+     transform: rotate(-45deg) translate(10px, -4px);
+     transition: 0.2s;
+}
+
+@media screen and (max-width: 760px) {
+     .humburger {
+          display: block;
+          cursor: pointer;
+     }
+
+     .navigate {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          align-items: center;
+          right: -100%;
+          height: 37vh;
+          top: 60px;
+          width: 400px;
+          position: fixed;
+          transition: 1s ease-in-out;
+          text-align: center;
+     }
+
+     .nav-active {
+          right: 0px;
+
+          width: 30%;
+          position: absolute;
+          background-color: white;
+          transition: 0.5s ease-in-out;
+     }
+     .navbar-nav li {
+          height: 35px;
+     }
+}
